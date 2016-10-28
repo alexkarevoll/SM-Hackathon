@@ -7,12 +7,11 @@ var
   apiRoutes = require('./routes/cars.js')
 
 var PORT = process.env.PORT || 3000
-var mongoConnectionString = process.env.MONGO_URL
 
-  mongoose.connect(process.env.MONGO_URL, function(err) {
-    if(err) return console.log('Cannot connect to Mongo')
-    console.log('Connected to MongoDB. WOOOO!')
-  })
+mongoose.connect('mongodb://localhost/sm-hackathon', function(err) {
+  if(err) return console.log(err)
+  console.log('Connected to MongoDB. WOOOO!')
+})
 
 app.use(logger('dev'))
 app.use(bodyParser.json())

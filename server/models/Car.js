@@ -1,9 +1,8 @@
 var
   mongoose = require('mongoose'),
   carSchema = new mongoose.Schema({
-    year: Number,
-    make: String,
-    model: String,
+    name: String,
+    location: String,
     description: String,
     image: String
   }, {timestamps: true})

@@ -3,10 +3,10 @@
     <div class="col-md-10 col-md-offset-1">
       <div class="page-header">
         <h1>
-          The Show Room
+          Open Requests for Help
           <!-- Pluralize 'Results' if more than 1 or 0 -->
           <small>
-            ({{filteredCars.length}} Car<span ng-if="filteredCars.length > 1 || !filteredCars.length">s</span>)
+            ({{filteredCars.length}} Request<span ng-if="filteredCars.length > 1 || !filteredCars.length">s</span>)
           </small>
         </h1>
       </div>
@@ -17,7 +17,7 @@
               <img ui-sref="car({ id:car._id })" ng-src="{{ car.image }}">
             </div>
             <div class="col-sm-9">
-              <h3>{{ car.make }} {{ car.model }} <small>{{ car.year }} </small><button ng-click="cc.destroyCar(car)" class = "btn btn-danger">Delete</button></h3>
+              <h3>{{ car.name }} {{ car.location }} <small>{{ car.description }} </small><button ng-click="cc.destroyCar(car)" class = "btn btn-danger">Close Request</button></h3>
               <p>
                 {{ car.description | limitTo: cc.textLimit}}
                 <span ng-if="car.description.length > cc.textLimit">...</span>

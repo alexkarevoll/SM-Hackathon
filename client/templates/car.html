@@ -1,7 +1,7 @@
 <div class="container">
   <div ng-hide="scc.editing">
     <div class="page-header">
-      <h1>{{ scc.car.year }} {{ scc.car.make }}  {{ scc.car.model }}</h1>
+      <h1>{{ scc.car.name }} {{ scc.car.location }}  {{ scc.car.description }}</h1>
     </div>
     <div class="row">
       <div class="col-md-6">
@@ -10,33 +10,29 @@
       <div class="col-md-6">
         <p>
           {{ scc.car.description }}
-          <button ng-click="scc.destroyCar()"class="btn btn-small btn-danger">Junk It</button>
-          <button ng-click="scc.editing = true"class="btn btn-small btn-info">Edit</button>
+          <button ng-click="scc.destroyCar()"class="btn btn-small btn-danger">Delete Request</button>
+          <button ng-click="scc.editing = true"class="btn btn-small btn-info">Change Information</button>
         </p>
       </div>
     </div>
   </div>
   <div ng-show="scc.editing">
-    <h2>Edit This Car</h2>
+    <h2>Change Request Information</h2>
     <form ng-submit="scc.editCar()">
       <div class="form-group">
-        <label for="carYear">Year</label>
-        <input ng-model="scc.newCar.year" class="form-control" id="carYear" placeholder="{{ scc.car.year }}">
+        <label for="carYear">Name</label>
+        <input ng-model="scc.newCar.name" class="form-control" id="carYear" placeholder="{{ scc.car.name }}">
       </div>
       <div class="form-group">
-        <label for="carMake">Make</label>
-        <input ng-model="scc.newCar.make" class="form-control" id="carMake" placeholder="{{ scc.car.make }}">
-      </div>
-      <div class="form-group">
-        <label for="carModel">Model</label>
-        <input ng-model="scc.newCar.model" class="form-control" id="carModel" placeholder="{{ scc.car.model }}">
+        <label for="carMake">Location</label>
+        <input ng-model="scc.newCar.location" class="form-control" id="carMake" placeholder="{{ scc.car.location }}">
       </div>
       <div class="form-group">
         <label for="carDesc">Description</label>
         <textarea ng-model="scc.newCar.description" class="form-control" id="carDesc" placeholder="{{ scc.car.description }}" rows="3"></textarea>
       </div>
       <div class="form-group">
-        <label for="carImg">Image URL</label>
+        <label for="carImg">Image</label>
         <input ng-model="scc.newCar.url" class="form-control" id="carImg" placeholder="{{ scc.car.image }}">
       </div>
       <button type="submit" class="btn btn-warning">Edit</button>

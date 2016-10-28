@@ -1,2 +1,2 @@
 node_modules
-MONGO_URL=mongodb://alex:smhackathon@ds137267.mlab.com:37267/sm-hackathon-1
+.env
