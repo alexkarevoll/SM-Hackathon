@@ -10,14 +10,25 @@
           </small>
         </h1>
       </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.2043002105443!2d-118.49740424890254!3d34.012966480521634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2a4d1ac9c480b%3A0xc4ffae91cceb94a4!2sSanta+Monica!5e0!3m2!1sen!2sus!4v1477687813098" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <form ng-show="main.$state.includes('cars')" class="">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Filter Requests" ng-model="carFilter">
+          <div class="input-group-btn">
+            <button ng-click="carFilter = ''" ng-disabled="!carFilter" class="btn btn-default" type="button">
+              <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+      </form>
       <div class="list-group">
         <div class="list-group-item clearfix car" ng-repeat="car in cc.cars | filter: carFilter as filteredCars">
           <div class="row">
-            <div class="col-sm-3 text-center">
+            <!-- <div class="col-sm-3 text-center">
               <img ui-sref="car({ id:car._id })" ng-src="{{ car.image }}">
-            </div>
+            </div> -->
             <div class="col-sm-9">
-              <h3>{{ car.name }} {{ car.location }} <small>{{ car.description }} </small><button ng-click="cc.destroyCar(car)" class = "btn btn-danger">Close Request</button></h3>
+              <h3>{{ car.location }}<small></small><button ng-click="cc.destroyCar(car)" class = "btn btn-danger">Close Request</button></h3>
               <p>
                 {{ car.description | limitTo: cc.textLimit}}
                 <span ng-if="car.description.length > cc.textLimit">...</span>

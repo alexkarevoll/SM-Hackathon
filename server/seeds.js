@@ -1,24 +1,18 @@
 module.exports = [
   {
-    "year": 1974,
-    "make": "Ford",
-    "model": "Mustang",
+    "location": "2132 El Segundo Los Angelese, CA",
     "image": "http://pictures.topspeed.com/IMG/crop/201609/1969-ford-mustang-boss-42-7_600x0w.jpg",
-    "description": "The second-generation Ford Mustang is a pony car that was manufactured by Ford from 1973 until 1978. It was introduced in showrooms during September 1973, in coupe and hatchback versions for the 1974 model year, in time for the 1973 oil crisis. The Mustang II had no common components with the preceding models and shared its platform with the subcompact-sized Ford Pinto."
+    "description": "Person is wearing brown coat with red scarf."
   },
   {
-    "year": 2016,
-    "make": "Honda",
-    "model": "Civic",
+    "location": "123 2nd st, Santa Monica CA",
     "image": "http://automobiles.honda.com/images/2016/civic-sedan/overview-colors/MS.jpg",
-    "description": "The Honda Civic is a line of small cars manufactured by Honda. Originally a subcompact, the Civic has gone through several generational changes, becoming both larger and more upmarket and moving into the compact car segment. EPA guidelines for vehicle size class stipulate a car having combined passenger and cargo room of 110 to 119.9 cubic feet (3,110 to 3,400 L) is considered a mid-size car, and as such the tenth generation Civic sedan is technically a small-end mid-size car, although it still competes in the compact class. The Civic coupe is still considered a compact car. The Civic currently falls between the Honda Fit and Honda Accord."
+    "description": "Wearing brown jacket with white shirt, brown pants."
   },
   {
-    "year": 1985,
-    "make": "DeLorean",
-    "model": "DMC-12",
+    "location": "2314 Inglewood, Los Angelese CA",
     "image": "http://www.paulfrasercollectibles.com/upload/public/docimages/Image/w/y/f/delorean-dmc12-for-sale-1981-410.jpg",
-    "description": "The DeLorean DMC-12 (commonly referred to simply as the DeLorean as it was the only model ever produced by the company) is a sports car manufactured by John DeLorean's DeLorean Motor Company for the American market from 1981-1983. The car features gull-wing doors and an innovative fiberglass body structure with a steel backbone chassis, along with external brushed stainless steel body panels. The car became widely known and iconic for its appearance and was modified as a time machine in the Back to the Future film trilogy."
+    "description": "Wearing black jacket, "
   },
   {
     "year": 1978,

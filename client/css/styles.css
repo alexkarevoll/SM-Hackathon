@@ -24,3 +24,16 @@
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #FFFFFF;
 }
+
+.navbar-brand{
+  font-family: cursive;
+}
+
+ #map {
+  height: 400px;
+  width: 100%;
+ }
+
+ .main-logo{
+   padding-top: 12px;
+ }

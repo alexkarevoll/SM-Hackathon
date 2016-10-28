@@ -4,23 +4,24 @@
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
       <h1>Submit a Request for Help</h1>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.2043002105443!2d-118.49740424890254!3d34.012966480521634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2a4d1ac9c480b%3A0xc4ffae91cceb94a4!2sSanta+Monica!5e0!3m2!1sen!2sus!4v1477687813098" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
       <form ng-submit="sc.createCar()">
-        <div class="form-group">
+        <!-- <div class="form-group">
           <label for="carYear">Name</label>
           <input ng-model="sc.newCar.name" class="form-control" id="carYear" placeholder="Name">
-        </div>
+        </div> -->
         <div class="form-group">
           <label for="carMake">Location</label>
-          <input ng-model="sc.newCar.location" class="form-control" id="carMake" placeholder="Location">
+          <input ng-model="sc.newCar.location" class="form-control" id="carMake" placeholder="Address,Cross Street, or Zip Code">
         </div>
         <div class="form-group">
           <label for="carDesc">Description</label>
-          <textarea ng-model="sc.newCar.description" class="form-control" id="carDesc" placeholder="Description" rows="3"></textarea>
+          <textarea ng-model="sc.newCar.description" class="form-control" id="carDesc" placeholder="Help our fellow good samaritan find this person. Please give any details about where they are and what they look like." rows="3"></textarea>
         </div>
-        <div class="form-group">
+        <!-- <div class="form-group">
           <label for="carImg">Image</label>
           <input ng-model="sc.newCar.image" class="form-control" id="carImg" placeholder="Url">
-        </div>
+        </div> -->
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
     </div>
