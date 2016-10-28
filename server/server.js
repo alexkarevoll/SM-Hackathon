@@ -5,11 +5,14 @@ var
   mongoose = require('mongoose'),
   bodyParser = require('body-parser'),
   apiRoutes = require('./routes/cars.js')
-  PORT = process.env.port || 3000
 
-mongoose.connect('mongodb://localhost/factories-practice', function(err) {
-  console.log(err || "Connected to MongoDB (factories-practice)")
-})
+var PORT = process.env.PORT || 3000
+var mongoConnectionString = process.env.MONGO_URL
+
+  mongoose.connect(process.env.MONGO_URL, function(err) {
+    if(err) return console.log('Cannot connect to Mongo')
+    console.log('Connected to MongoDB. WOOOO!')
+  })
 
 app.use(logger('dev'))
 app.use(bodyParser.json())
